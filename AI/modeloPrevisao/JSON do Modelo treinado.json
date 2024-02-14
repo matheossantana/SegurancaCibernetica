@@ -1,0 +1,270 @@
+{
+    "runId": "previsaoAtaques_2",
+    "runUuid": "0cee6ed9-c642-4d65-a587-b95990c0f98c",
+    "parentRunUuid": "eeabade5-8553-4dcf-bf00-4ed18fa86cea",
+    "rootRunUuid": "eeabade5-8553-4dcf-bf00-4ed18fa86cea",
+    "target": "Serverless",
+    "status": "Completed",
+    "parentRunId": "previsaoAtaques",
+    "dataContainerId": "dcid.previsaoAtaques_2",
+    "createdTimeUtc": "2024-02-10T23:50:58.866708+00:00",
+    "startTimeUtc": "2024-02-11T00:11:27.734Z",
+    "endTimeUtc": "2024-02-11T00:12:33.773Z",
+    "error": null,
+    "warnings": null,
+    "tags": {
+        "_aml_system_linked_batch_run_id": "previsaoAtaques_worker_0",
+        "_aml_system_azureml.automlComponent": "AutoML",
+        "_aml_system_codegen": "completed",
+        "_aml_system_automl_is_child_run_end_telemetry_event_logged": "True",
+        "model_explain_run_id": "previsaoAtaques_ModelExplain",
+        "model_explanation": "True"
+    },
+    "properties": {
+        "runTemplate": "automl_child",
+        "pipeline_id": "51ae05309834b29f71340af1008fc94fbd8213f4",
+        "pipeline_spec": "{\"objects\": [{\"class_name\": \"MaxAbsScaler\", \"module\": \"sklearn.preprocessing\", \"param_args\": [], \"param_kwargs\": {}, \"prepared_kwargs\": {}, \"spec_class\": \"preproc\"}, {\"class_name\": \"ExtraTreesClassifier\", \"module\": \"sklearn.ensemble\", \"param_args\": [], \"param_kwargs\": {\"bootstrap\": false, \"class_weight\": null, \"criterion\": \"gini\", \"max_features\": 0.7, \"min_samples_leaf\": 0.035789473684210524, \"min_samples_split\": 0.01, \"n_estimators\": 10, \"oob_score\": false}, \"prepared_kwargs\": {}, \"spec_class\": \"sklearn\"}], \"pipeline_id\": \"51ae05309834b29f71340af1008fc94fbd8213f4\", \"module\": \"sklearn.pipeline\", \"class_name\": \"Pipeline\", \"pipeline_name\": \"{ MaxAbsScaler, ExtraTreesClassifier }\"}",
+        "training_percent": "100",
+        "predicted_cost": "0.5",
+        "iteration": "2",
+        "_aml_system_scenario_identification": "Remote.Child",
+        "run_preprocessor": "MaxAbsScaler",
+        "run_algorithm": "ExtremeRandomTrees",
+        "model_output_path": "outputs/model.pkl",
+        "conda_env_data_location": "aml://artifact/ExperimentRun/dcid.previsaoAtaques_2/outputs/conda_env_v_1_0_0.yml",
+        "model_data_location": "aml://artifact/ExperimentRun/dcid.previsaoAtaques_2/outputs/model.pkl",
+        "model_size_on_disk": "291998",
+        "scoring_data_location": "aml://artifact/ExperimentRun/dcid.previsaoAtaques_2/outputs/scoring_file_v_1_0_0.py",
+        "scoring_data_location_v2": "aml://artifact/ExperimentRun/dcid.previsaoAtaques_2/outputs/scoring_file_v_2_0_0.py",
+        "scoring_data_location_pbi": "aml://artifact/ExperimentRun/dcid.previsaoAtaques_2/outputs/scoring_file_pbi_v_1_0_0.py",
+        "model_exp_support": "True",
+        "pipeline_graph_version": "1.0.0",
+        "model_name": "previsaoAtaques2",
+        "score": "0.9877525174484212",
+        "score_table": "NaN",
+        "pipeline_script": "{\"objects\": [{\"class_name\": \"MaxAbsScaler\", \"module\": \"sklearn.preprocessing\", \"param_args\": [], \"param_kwargs\": {}, \"prepared_kwargs\": {}, \"spec_class\": \"preproc\"}, {\"class_name\": \"ExtraTreesClassifier\", \"module\": \"sklearn.ensemble\", \"param_args\": [], \"param_kwargs\": {\"bootstrap\": false, \"class_weight\": null, \"criterion\": \"gini\", \"max_features\": 0.7, \"min_samples_leaf\": 0.035789473684210524, \"min_samples_split\": 0.01, \"n_estimators\": 10, \"oob_score\": false}, \"prepared_kwargs\": {}, \"spec_class\": \"sklearn\"}], \"pipeline_id\": \"51ae05309834b29f71340af1008fc94fbd8213f4\", \"module\": \"sklearn.pipeline\", \"class_name\": \"Pipeline\", \"pipeline_name\": \"{ MaxAbsScaler, ExtraTreesClassifier }\"}",
+        "training_type": "MeanCrossValidation",
+        "fit_time": "1.358635",
+        "goal": "AUC_weighted_max",
+        "primary_metric": "AUC_weighted",
+        "errors": "{}",
+        "onnx_model_resource": "{}",
+        "dependencies_versions": "{\"azureml-dataprep-native\": \"38.0.0\", \"azureml-dataprep\": \"4.12.8\", \"azureml-dataprep-rslex\": \"2.19.6\", \"azureml-mlflow\": \"1.54.0.post1\", \"azureml-core\": \"1.54.0.post1\", \"azureml-train-automl-client\": \"1.54.0.post1\", \"azureml-train-automl-runtime\": \"1.54.0.post1\", \"azureml-dataset-runtime\": \"1.54.0.post1\", \"azureml-pipeline-core\": \"1.54.0\", \"azureml-telemetry\": \"1.54.0\", \"azureml-responsibleai\": \"1.54.0\", \"azureml-interpret\": \"1.54.0\", \"azureml-training-tabular\": \"1.54.0\", \"azureml-automl-runtime\": \"1.54.0\", \"azureml-train-core\": \"1.54.0\", \"azureml-train-restclients-hyperdrive\": \"1.54.0\", \"azureml-automl-core\": \"1.54.0\", \"azureml-defaults\": \"1.54.0\", \"azureml-inference-server-http\": \"0.8.4.2\"}",
+        "num_cores": "4",
+        "num_logical_cores": "4",
+        "peak_memory_usage": "2455504",
+        "vm_configuration": "x86_64",
+        "core_hours": "0.022488648888888896",
+        "feature_skus": "automatedml_sdk_guardrails"
+    },
+    "parameters": {},
+    "services": {},
+    "inputDatasets": [],
+    "outputDatasets": [],
+    "runDefinition": {
+        "script": "automl_driver.py",
+        "useAbsolutePath": true,
+        "arguments": [],
+        "sourceDirectoryDataStore": null,
+        "framework": "Python",
+        "target": "Serverless",
+        "autoClusterComputeSpecification": {
+            "instanceSize": "Standard_DS12_v2",
+            "instancePriority": "Dedicated",
+            "osType": null,
+            "location": null,
+            "runtimeVersion": null
+        },
+        "dataReferences": {},
+        "data": {},
+        "outputData": {},
+        "datacaches": [],
+        "jobName": null,
+        "maxRunDurationSeconds": null,
+        "nodeCount": null,
+        "maxNodeCount": 10,
+        "instanceTypes": [],
+        "priority": null,
+        "credentialPassthrough": false,
+        "identity": null,
+        "environment": {
+            "name": "AzureML-AutoML",
+            "version": "156",
+            "assetId": "azureml://registries/azureml/environments/AzureML-AutoML/versions/156",
+            "autoRebuild": true,
+            "python": {
+                "interpreterPath": "python",
+                "userManagedDependencies": true,
+                "condaDependencies": null,
+                "baseCondaEnvironment": null
+            },
+            "environmentVariables": {
+                "EXAMPLE_ENV_VAR": "EXAMPLE_VALUE"
+            },
+            "docker": {
+                "baseImage": null,
+                "platform": {
+                    "os": "Linux",
+                    "architecture": "amd64"
+                },
+                "baseDockerfile": "FROM mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04\n\nENV AZUREML_CONDA_ENVIRONMENT_PATH /azureml-envs/azureml-automl\nENV PATH $AZUREML_CONDA_ENVIRONMENT_PATH/bin:$PATH\n\nCOPY --from=mcr.microsoft.com/azureml/mlflow-ubuntu20.04-py38-cpu-inference:20230306.v3 /var/mlflow_resources/mlflow_score_script.py /var/mlflow_resources/mlflow_score_script.py\n\nENV MLFLOW_MODEL_FOLDER=\"mlflow-model\"\n# ENV AML_APP_ROOT=\"/var/mlflow_resources\"\n# ENV AZUREML_ENTRY_SCRIPT=\"mlflow_score_script.py\"\n\nENV ENABLE_METADATA=true\n\n# begin conda create\n# Create conda environment\nRUN conda create -p $AZUREML_CONDA_ENVIRONMENT_PATH \\\n    python=3.8 \\\n    # begin conda dependencies\n    pip=22.1.2 \\\n    numpy~=1.22.3 \\\n    py-cpuinfo=5.0.0 \\\n    joblib=1.2.0 \\\n    cloudpickle=1.6.0 \\\n    scikit-learn=1.1.3 \\\n    pandas~=1.3.5 \\\n    py-xgboost=1.3.3 \\\n    holidays=0.29 \\\n    setuptools-git \\\n    setuptools=65.5.1 \\\n    wheel=0.38.1 \\\n    pyopenssl=23.2.0 \\\n    'psutil>5.0.0,<6.0.0' \\\n    # end conda dependencies\n    -c conda-forge -c pytorch -c anaconda && \\\n    conda run -p $AZUREML_CONDA_ENVIRONMENT_PATH && \\\n    conda clean -a -y\n# end conda create\n\n# begin pip install\n# Install pip dependencies\nRUN pip install  \\\n                # begin pypi dependencies\n                'azureml-core==1.54.0.post1' \\\n                'azureml-mlflow==1.54.0.post1' \\\n                'azureml-pipeline-core==1.54.0' \\\n                'azureml-telemetry==1.54.0' \\\n                'azureml-interpret==1.54.0' \\\n                'azureml-responsibleai==1.54.0' \\\n                'azureml-automl-core==1.54.0' \\\n                'azureml-automl-runtime==1.54.0' \\\n                'azureml-train-automl-client==1.54.0.post1' \\\n                'azureml-train-automl-runtime==1.54.0.post1' \\\n                'azureml-dataset-runtime==1.54.0.post1' \\\n                'azureml-defaults==1.54.0' \\\n                'cryptography>=41.0.4' \\\n                'inference-schema' \\\n                'prophet==1.1.4' \\\n                'mltable>=1.0.0'\n                # end pypi dependencies\n# end pip install\n\n# dummy number to change when needing to force rebuild without changing the definition: 3",
+                "baseImageRegistry": {
+                    "address": null,
+                    "username": null,
+                    "password": null
+                },
+                "enabled": false,
+                "arguments": []
+            },
+            "spark": {
+                "repositories": [],
+                "packages": [],
+                "precachePackages": true
+            },
+            "inferencingStackVersion": null
+        },
+        "history": {
+            "outputCollection": true,
+            "directoriesToWatch": [
+                "logs"
+            ],
+            "enableMLflowTracking": true
+        },
+        "spark": {
+            "configuration": {}
+        },
+        "parallelTask": {
+            "maxRetriesPerWorker": 0,
+            "workerCountPerNode": 1,
+            "terminalExitCodes": null,
+            "configuration": {}
+        },
+        "amlCompute": {
+            "name": "Serverless",
+            "vmSize": null,
+            "retainCluster": false,
+            "clusterMaxNodeCount": 10
+        },
+        "aiSuperComputer": {
+            "instanceType": "D2",
+            "imageVersion": null,
+            "location": null,
+            "aiSuperComputerStorageData": null,
+            "interactive": false,
+            "scalePolicy": null,
+            "virtualClusterArmId": null,
+            "tensorboardLogDirectory": null,
+            "sshPublicKey": null,
+            "sshPublicKeys": null,
+            "enableAzmlInt": true,
+            "priority": "Medium",
+            "slaTier": "Standard",
+            "userAlias": null
+        },
+        "kubernetesCompute": {
+            "instanceType": null
+        },
+        "tensorflow": {
+            "workerCount": 0,
+            "parameterServerCount": 0
+        },
+        "mpi": {
+            "processCountPerNode": 0
+        },
+        "pyTorch": {
+            "communicationBackend": null,
+            "processCount": null
+        },
+        "hdi": {
+            "yarnDeployMode": "None"
+        },
+        "containerInstance": {
+            "region": null,
+            "cpuCores": 2,
+            "memoryGb": 3.5
+        },
+        "exposedPorts": null,
+        "docker": {
+            "useDocker": true,
+            "sharedVolumes": null,
+            "shmSize": null,
+            "arguments": null
+        },
+        "cmk8sCompute": {
+            "configuration": {}
+        },
+        "commandReturnCodeConfig": {
+            "returnCode": "Zero",
+            "successfulReturnCodes": []
+        },
+        "environmentVariables": {
+            "AUTOML_SDK_RESOURCE_URL": "https://aka.ms/automl-resources/"
+        },
+        "applicationEndpoints": {},
+        "parameters": []
+    },
+    "logFiles": {},
+    "jobCost": {
+        "chargedCpuCoreSeconds": null,
+        "chargedCpuMemoryMegabyteSeconds": null,
+        "chargedGpuSeconds": null,
+        "chargedNodeUtilizationSeconds": null
+    },
+    "revision": 11,
+    "runTypeV2": {
+        "orchestrator": null,
+        "traits": [
+            "automl",
+            "Remote.Child"
+        ],
+        "attribution": null,
+        "computeType": null
+    },
+    "settings": {},
+    "computeRequest": null,
+    "compute": null,
+    "createdBy": {
+        "userObjectId": "2762b38a-609c-467b-969d-ff94de0b0f17",
+        "userPuId": "10032002659F8FE1",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:00037FFE4DD2D918",
+        "userIss": "https://sts.windows.net/72ba6f30-81ec-45f6-9f05-839b3103f60d/",
+        "userTenantId": "72ba6f30-81ec-45f6-9f05-839b3103f60d",
+        "userName": "Matheus Santana",
+        "upn": null
+    },
+    "computeDuration": "00:01:06.0386644",
+    "effectiveStartTimeUtc": null,
+    "runNumber": 1707609058,
+    "rootRunId": "previsaoAtaques",
+    "experimentId": "194edadf-209c-44bb-9836-c652eed7b27a",
+    "userId": "2762b38a-609c-467b-969d-ff94de0b0f17",
+    "statusRevision": 2,
+    "currentComputeTime": null,
+    "lastStartTimeUtc": null,
+    "lastModifiedBy": {
+        "userObjectId": "2762b38a-609c-467b-969d-ff94de0b0f17",
+        "userPuId": "10032002659F8FE1",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:00037FFE4DD2D918",
+        "userIss": "azureml",
+        "userTenantId": "72ba6f30-81ec-45f6-9f05-839b3103f60d",
+        "userName": "Matheus Santana",
+        "upn": null
+    },
+    "lastModifiedUtc": "2024-02-11T00:19:36.9219296+00:00",
+    "duration": "00:01:06.0386644",
+    "inputs": {
+        "training_data": {
+            "assetId": "azureml://locations/eastus2/workspaces/75319874-8e71-451b-a60d-66f06acf04cc/data/NSL-KDD/versions/1",
+            "type": "MLTable"
+        }
+    },
+    "outputs": {
+        "mlflow_log_model_391176562": {
+            "assetId": "azureml://locations/eastus2/workspaces/75319874-8e71-451b-a60d-66f06acf04cc/models/azureml_previsaoAtaques_2_output_mlflow_log_model_391176562/versions/1",
+            "type": "MLFlowModel"
+        }
+    },
+    "currentAttemptId": 1
+}
